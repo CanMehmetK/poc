@@ -1,0 +1,66 @@
+<div class="control-section">
+  <ejs-treegrid
+    [dataSource]="userListData"
+    allowPaging="true"
+    childMapping="subtasks"
+    height="350"
+    [treeColumnIndex]="1"
+    [showColumnChooser]="true"
+    [toolbar]="toolbar"
+    [pageSettings]="pageSettings"
+  >
+    <e-columns>
+      <e-column
+        field="userId"
+        headerText="Rol ID"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+
+      <e-column
+        field="userName"
+        headerText="Kullanıcı Adı"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="userPermissions"
+        headerText="Kullanıcı Rolü"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="userDescription"
+        headerText="Şube Yetkisi"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="phoneNumber"
+        headerText="Tel"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="date"
+        headerText="İşe Giriş Tarihi"
+        width="70"
+        textAlign="Center"
+        format="yMd"
+      ></e-column>
+
+      <e-column
+        field="status"
+        headerText="Durumu"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+    </e-columns>
+  </ejs-treegrid>
+</div>

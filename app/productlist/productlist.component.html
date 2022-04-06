@@ -1,0 +1,176 @@
+<div class="control-section">
+  <ejs-treegrid
+    [dataSource]="productListData"
+    allowPaging="true"
+    childMapping="subtasks"
+    height="350"
+    [treeColumnIndex]="1"
+    [showColumnChooser]="true"
+    [toolbar]="toolbar"
+    [pageSettings]="pageSettings"
+  >
+    <e-columns>
+      <e-column
+        field="productCode"
+        headerText="Ürün Kodu"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+      ></e-column>
+
+      <e-column
+        field="productName"
+        headerText="Ürün Adı"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="productDescription"
+        headerText="Ürün Açıklaması"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+      ></e-column>
+
+      <e-column
+        field="imagePath"
+        headerText="Resim Dosya Yolu"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+
+      <e-column
+        field="printer"
+        headerText="Mutfak Grubu"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+      ></e-column>
+
+      <e-column
+        field="iCollection"
+        headerText="Lorem"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+
+      <e-column
+        field="productBarcode"
+        headerText="Ürün Barkodu"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+
+      <e-column
+        field="kitchenScreenEnabled"
+        headerText="Ürün Mutfak Durumu"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+      ></e-column>
+
+      <e-column
+        field="qrMenuEnabled"
+        headerText="QR Menu Durumu"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+      ></e-column>
+
+      <e-column
+        field="isActive"
+        headerText="Ürün Durumu"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="kdvEnabled"
+        headerText="KDV Durumu"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+      ></e-column>
+
+      <e-column
+        field="kdvRate"
+        headerText="KDV Oranı"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="portionInformation"
+        headerText="Porsiyon Bilgisi"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="favouriteEnabled"
+        headerText="Favori Ürün Durumu"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+
+      <e-column
+        field="productCategoryId"
+        headerText="Ürün Kategori ID"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+
+      <e-column
+        field="productCategory"
+        headerText="Ürün Kategorisi"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="branchId"
+        headerText="Şube ID"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+
+      <e-column
+        field="branch"
+        headerText="Şube"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+
+      <e-column
+        field="productPrice"
+        headerText="Ürün Fiyatı"
+        width="70"
+        textAlign="Center"
+      ></e-column>
+
+      <e-column
+        field="ProductIngredient"
+        headerText="Lorem"
+        width="70"
+        textAlign="Center"
+        [visible]="false"
+        [showInColumnChooser]="false"
+      ></e-column>
+    </e-columns>
+  </ejs-treegrid>
+</div>

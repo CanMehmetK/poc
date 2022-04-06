@@ -1,0 +1,50 @@
+<div class="control-section">
+  <ejs-treegrid
+    [dataSource]="rolListData"
+    allowPaging="true"
+    childMapping="subtasks"
+    height="350"
+    [treeColumnIndex]="1"
+    [showColumnChooser]="true"
+    [toolbar]="toolbar"
+    [pageSettings]="pageSettings"
+  >
+    <e-columns>
+      <e-column
+        field="rolDescription"
+        headerText="Rol Adı"
+        width="70"
+        textAlign="Right"
+      ></e-column>
+
+      <e-column
+        field="rolPermissions"
+        headerText="Departman"
+        width="70"
+        textAlign="Right"
+      ></e-column>
+
+      <e-column
+        field="rolStatus"
+        headerText="Durumu"
+        width="70"
+        textAlign="Right"
+      ></e-column>
+
+      <e-column
+        field="rolName"
+        headerText="Rol Adı"
+        width="70"
+        textAlign="Right"
+        [visible]="false"
+      ></e-column>
+      <e-column
+        field="rolId"
+        headerText="Rol Id"
+        width="70"
+        textAlign="Right"
+        [visible]="false"
+      ></e-column>
+    </e-columns>
+  </ejs-treegrid>
+</div>

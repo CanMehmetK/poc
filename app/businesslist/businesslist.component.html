@@ -1,0 +1,143 @@
+<div class="control-section">
+<ejs-treegrid
+  [dataSource]="data"
+  allowPaging="true"
+  childMapping="subtasks"
+  height="350"
+  [treeColumnIndex]="1"
+  [showColumnChooser]="true"
+  [toolbar]="toolbar"
+  [pageSettings]="pageSettings"
+>
+  <e-columns>
+    <e-column
+      field="city"
+      headerText="İl"
+      width="120"
+      textAlign="Center"
+    ></e-column>
+
+    <e-column
+      field="phone"
+      headerText="Telefon"
+      width="120"
+      textAlign="Center"
+    ></e-column>
+
+    <e-column
+      field="businessType"
+      headerText="İşletme Türü"
+      width="120"
+      textAlign="Center"
+    ></e-column>
+
+    <e-column
+      field="status"
+      headerText="Durum"
+      width="120"
+      textAlign="Center"
+    ></e-column>
+
+    <e-column
+      field="title"
+      headerText="Ünvan"
+      width="120"
+      textAlign="Center"
+    ></e-column>
+
+    <e-column
+      field="cellPhone"
+      headerText="Mobil"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+    ></e-column>
+
+    <e-column
+      field="mail"
+      headerText="E-mail"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+    ></e-column>
+
+    <e-column
+      field="tenantId"
+      headerText="Kiracı"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+    ></e-column>
+
+    <e-column
+      field="parentId"
+      headerText="Yeni Şube"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+    ></e-column>
+
+    <e-column
+      field="name"
+      headerText="Ad, Soyad"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+    ></e-column>
+
+    <e-column
+      field="country"
+      headerText="Ülke"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+      [showInColumnChooser]="false"
+    ></e-column>
+
+    <e-column
+      field="posQuantity"
+      headerText="Pos Sayısı"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+      [showInColumnChooser]="false"
+    ></e-column>
+
+    <e-column
+      field="branchQuantity"
+      headerText="Şube Sayısı"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+      [showInColumnChooser]="false"
+    ></e-column>
+
+    <e-column
+      field="language"
+      headerText="Dil"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+      [showInColumnChooser]="false"
+    ></e-column>
+
+    <e-column
+      field="currency"
+      headerText="Para Birimi"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+      [showInColumnChooser]="false"
+    ></e-column>
+
+    <e-column
+      field="password"
+      headerText="Şifre"
+      width="120"
+      textAlign="Center"
+      [visible]="false"
+      [showInColumnChooser]="false"
+    ></e-column>
+  </e-columns>
+</ejs-treegrid>
+</div>
